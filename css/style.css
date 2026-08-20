@@ -25,11 +25,16 @@ header{
 
 h1, h2, span, img{
     color: var(--claro);
-    margin: 0;
+    margin: 5px;
 }
 
-img{
+#logotipo{
     width: 90px;
+}
+
+.icon{
+    width: 90px;
+    align-self: center;
 }
 
 main{
@@ -49,6 +54,8 @@ main{
 
 #materias, #pendentes, #concluidas{
     background-color: var(--escuro2);
+    display: flex;
+    flex-flow: column nowrap;
     width: 240px;
     padding: 30px;
     text-align: center;
