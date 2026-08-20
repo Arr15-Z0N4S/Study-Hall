@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hall</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/imagens/grão e.png" alt="logotipo">
+        <h1>Study Hall</h1>
+        <div id="user">
+            <h2 id="userName">Chrys</h2>
+            <span id="email">testeteste@gmail.com</span>
+        </div>
+    </header>
+
+    <main>
+
+        <img src="/imagens/menu.png" alt="menu" onclick="dashboard()" id="menu">
+
+        <aside id="dashboard">
+            <input type="button" value="X" onclick="dashboard()" id="fechar">
+            <nav>
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Matérias</a></li>
+                    <li><a href="">Tarefas</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="">Configurações</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+    
+        <div id="container">
+
+            <div id="materias">
+                <h2>Matérias</h2>
+                <img src="/imagens/materias.webp" alt="materias">
+                <span id="quant_mat"></span>
+            </div>
+
+            <div id="pendentes">
+                <h2>Tarefas pendentes</h2>
+                <img src="/imagens/a_fazer.png" alt="tarefas pendentes" >
+                <span id="quant_pend"></span>
+            </div>
+
+            <div id="concluidas">
+                <h2>Tarefas Concluídas</h2>
+                <img src="/imagens/concluídas.png" alt="concluidas">
+                <span id="quant_con"></span>
+            </div>
+            
+            <div id="inputs">
+                <div id="inputs_">
+                    <input type="text" name="materiais" id="materias_" placeholder="Adicione uma matéria" class="input">
+                    <button onclick="adicionar_mat()" id="add">Adicionar</button>
+                    <button onclick="remover_mat()" id="rem">Remover</button>
+                </div>
+    
+                <div id="inputs_">
+                    <input type="text" name="tarefas" id="tarefas_" placeholder="Adicione uma tarefa" class="input">
+                    <button onclick="adicionar_tar()" id="add">Adicionar</button>
+                    <button onclick="remover_tar()" id="rem">Remover</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

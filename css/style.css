@@ -1,0 +1,141 @@
+/* palheta de cores */
+:root{
+    --escuro: #330136;
+    --escuro2: #5E1742;
+    --medio: #962E40;
+    --claro2: #C9463D;
+    --claro: #FF5E35;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--claro2);
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--escuro);
+    padding: 30px;
+}
+
+h1, h2, span, img{
+    color: var(--claro);
+    margin: 0;
+}
+
+img{
+    width: 90px;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    min-height: 100vh;
+}
+
+#container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -5px;
+}
+
+#materias, #pendentes, #concluidas{
+    background-color: var(--escuro2);
+    width: 240px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: var(--escuro) 3px 3px 3px; 
+}
+
+#menu{
+    width: 30px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#dashboard{
+    position: absolute;
+    left: 0;
+    width: 210px;
+    max-width: 75vw;
+    height: 100%;
+    background-color: var(--escuro);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+#dashboard.active{
+    transform: translateX(0);
+}
+
+nav{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+    margin: 7px;
+}
+
+a{
+    font-size: 20px;
+    color: var(--claro);
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#fechar{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    padding: 1px;
+    font-size: 20px;
+    color: var(--claro2);
+    cursor: pointer;
+}
+
+#inputs{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px;
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    margin: 4px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+#add{
+    background-color: var(--claro);
+}
+
+#rem{
+    background-color: var(--medio);
+}
+
+.input{
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px;
+}
