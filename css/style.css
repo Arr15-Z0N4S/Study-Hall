@@ -62,6 +62,19 @@ main{
     margin: 20px;
     box-shadow: var(--escuro) 3px 3px 3px; 
 }
+#lista_materia{
+    padding: 0;
+    margin: 10px
+}
+#lista_materias li{
+    list-style-type: none;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: var(--medio);
+    border-radius: 5px;
+    color: white
+    
+}
 
 #menu{
     width: 30px;
