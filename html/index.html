@@ -41,7 +41,9 @@
             <div id="materias">
                 <h2>Matérias</h2>
                 <img src="/imagens/materias.webp" alt="materias" class="icon">
-                <span id="quant_mat">0</span>
+                <span id="mat_quant">0</span>
+
+                <ul id="lista_materias"> </ul>
             </div>
 
             <div id="pendentes">
@@ -59,8 +61,8 @@
             <div id="inputs">
                 <div id="inputs_">
                     <input type="text" name="materiais" id="materias_" placeholder="Adicione uma matéria" class="input">
-                    <button onclick="adicionar_mat()" id="add">Adicionar</button>
-                    <button onclick="remover_mat()" id="rem">Remover</button>
+                    <button onclick="adicionar()" id="add">Adicionar</button>
+                    <button onclick="remover()" id="rem">Remover</button>
                 </div>
     
                 <div id="inputs_">
